@@ -1,11 +1,16 @@
 import React from 'react';
 
 
-const Button = () => {
+const Button = ({arr}) => {
+
+  function filterArr (id){
+    const new_arr = arr.filter(elem => elem.id != id)
+  }
+
   return (
-    <div>
-      
-    </div>
+    <button onclick={() => filterArr()}>
+      delete
+    </button>
   );
 };
 

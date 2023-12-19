@@ -1,14 +1,13 @@
 import React from 'react';
-import classes from './input.module.css';
 
 
-const Input = ({type='text', placeholder, onChange}) => {
+const Input = ({name, onChange, value}) => {
   return (
     <input
-      className={classes.input}
-      type={type}
-      placeholder={placeholder}
+      type="text"
+      name={name}
       onChange={onChange}
+      value={value}
     />
   );
 };
